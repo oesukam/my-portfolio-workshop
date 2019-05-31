@@ -1,0 +1,18 @@
+.my-profile-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.social-icons {
+  padding: 10px 0;
+}
+.social-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
