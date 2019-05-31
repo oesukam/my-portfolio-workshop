@@ -9,9 +9,15 @@
   -o-border-radius: 50%;
 }
 
+.about-me {
+  margin-bottom: 2rem;
+}
+
 .social-icons {
   padding: 10px 0;
+  text-align: center;
 }
+
 .social-icon {
   font-size: 2rem;
   margin-right: 1rem;

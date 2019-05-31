@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import profile from "../../images/profile.jpg";
 
@@ -6,7 +7,7 @@ const Home = () => (
   <div className="hero is-fullheight">
     <div className="hero-body">
       <div className="container is-fullheight">
-        <div className="columns">
+        <div className="columns is-vcentered">
           <div className="column has-text-centered">
             <img src={profile} className="my-profile-image" alt="My profile" />
           </div>
@@ -14,10 +15,28 @@ const Home = () => (
             <h1 className="title is-1">I'M Olivier ESUKA</h1>
             <h1 className="title is-3 is-light">Software Engineer - 4 Years</h1>
             <hr />
-            <p>
+            <p className="about-me">
               A full-stack developer who enjoys solving problems and building
               products.
             </p>
+            <div className="columns">
+              <div className="column ">
+                <Link
+                  to="/resume"
+                  className="button is-info  is-large is-fullwidth"
+                >
+                  Resume
+                </Link>
+              </div>
+              <div className="column ">
+                <Link
+                  to="/contact"
+                  className="button is-light is-large is-fullwidth"
+                >
+                  Contact
+                </Link>
+              </div>
+            </div>
             <p className="social-icons">
               <a
                 className="social-icon"

@@ -6,6 +6,7 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import TopNav from "./components/TopNav/TopNav";
+import Resume from "./pages/Resume/Resume";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <TopNav />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/resume" exact component={Resume} />
           <Route path="*" component={NotFound} />
         </Switch>
       </BrowserRouter>
