@@ -1,7 +1,7 @@
 import React from "react";
 import "bulma/css/bulma.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
@@ -12,7 +12,7 @@ import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
+      <HashRouter basename="/">
         <TopNav />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/contact" exact component={Contact} />
           <Route path="*" component={NotFound} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
