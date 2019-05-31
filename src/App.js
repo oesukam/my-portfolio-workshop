@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import TopNav from "./components/TopNav/TopNav";
 import Resume from "./pages/Resume/Resume";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/resume" exact component={Resume} />
+          <Route path="/contact" exact component={Contact} />
           <Route path="*" component={NotFound} />
         </Switch>
       </BrowserRouter>
