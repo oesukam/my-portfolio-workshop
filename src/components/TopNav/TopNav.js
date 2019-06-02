@@ -6,10 +6,10 @@ const TopNav = () => (
   <header className="container" id="top-nav">
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="/">
+        <Link className="navbar-item" to="/">
           <span className="title is-5 first-name">Olivier </span>
           <span className="title is-5 last-name"> Esuka</span>
-        </a>
+        </Link>
 
         <button
           className="navbar-burger burger"
